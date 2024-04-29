@@ -11,7 +11,7 @@ about:
       href: mailto:mfriveglia@gmail.com
       text: Email # Icon label text
     - icon: linkedin
-      href: www.linkedin.com/in/michael-riveglia
+      href: https://www.linkedin.com/in/michael-riveglia/
       text: Linkedin # Icon label text
 ---
 
