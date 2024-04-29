@@ -20,7 +20,7 @@ website:
       - icon: envelope
         href: mailto:mfriveglia@gmail.com
       - icon: linkedin
-        href: www.linkedin.com/in/michael-riveglia
+        href: https://www.linkedin.com/in/michael-riveglia/
     collapse: true # Collapse the top navbar when window is narrowed
     #rel: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel
     #target: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target 
@@ -34,7 +34,7 @@ website:
       - icon: envelope
         href: mailto:mfriveglia@gmail.com
       - icon: linkedin
-        href: www.linkedin.com/in/michael-riveglia
+        href: https://www.linkedin.com/in/michael-riveglia/ 
     border: true
     foreground: "#HEXVALUE"
     background: "#HEXVALUE"
