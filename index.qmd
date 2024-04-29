@@ -1,0 +1,22 @@
+---
+#title: "Michael Riveglia"
+image: Profile-Picture.png
+sidebar: false
+about:
+  template: trestles
+  image-shape: round # Profile-Picture shape
+  image-width: 15em # Profile-Picture size
+  links:
+    - icon: envelope
+      href: mailto:mfriveglia@gmail.com
+      text: Email # Icon label text
+    - icon: linkedin
+      href: www.linkedin.com/in/michael-riveglia
+      text: Linkedin # Icon label text
+---
+
+### *Hello, thank you for visiting my website!*
+
+I am primarily interested in geospatial technologies and spatial analysis as a means to extract useful information from spatial data of all types. My appreciation of geography began with an interest in exploring social and economic differences across the US through a qualitative lens. After being introduced to GIS, I increasingly gained an appreciation of maps as unique and powerful data visualization tools.
+
+Currently, I am looking to further develop my Python and R programming skills while exploring the field of spatial data science. I encourage you to view my [portfolio](portfolio.qmd) of selected projects.

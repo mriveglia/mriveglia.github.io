@@ -1,0 +1,61 @@
+project:
+  type: website
+  
+  output-dir: docs # Folder where Quarto renders the files for this website.
+                   # 'docs' works well when publishing via GitHub pages.
+
+
+website:
+  title: "Michael Riveglia"
+  
+  navbar:
+    # Left aligned links to other pages on this website
+    left:
+      - href: index.qmd
+        text: About Me
+      - href: portfolio.qmd
+        text: Portfolio
+    # Right aligned social and Email links.
+    right:
+      - icon: envelope
+        href: mailto:mfriveglia@gmail.com
+      - icon: linkedin
+        href: www.linkedin.com/in/michael-riveglia
+    collapse: true # Collapse the top navbar when window is narrowed
+    #rel: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel
+    #target: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target 
+    #background: "#HEXVALUE"
+    #foreground: "#HEXVALUE"
+
+  #favicon: https://en.wikipedia.org/wiki/Favicon and https://favicon.io/favicon-generator/
+  
+  page-footer:
+    center:
+      - icon: envelope
+        href: mailto:mfriveglia@gmail.com
+      - icon: linkedin
+        href: www.linkedin.com/in/michael-riveglia
+    border: true
+    foreground: "#HEXVALUE"
+    background: "#HEXVALUE"
+
+  search:
+    location: sidebar
+
+
+format:
+  html:
+    grid: 
+      gutter-width: 0.01em #margin alignment
+      body-width: 900px #margin alignment
+    theme: Cosmo
+    mainfont: Garamond
+    fontsize: 1.3em
+    #fontcolor: 
+    #linkcolor:
+    #monofont: (for code font)
+    css: styles.css
+    toc: false # presence/absence of the right sidebar 
+
+
+editor: visual

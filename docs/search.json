@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "storm-surge-inundation-in-groton-ct.html",
+    "href": "storm-surge-inundation-in-groton-ct.html",
+    "title": "Storm Surge Inundation in Groton, CT",
+    "section": "",
+    "text": "Tools Used\n\nArcGIS Pro\n\n\nDescription\nWith the projected rise of sea levels due to climate-related factors, coastal flooding from storm surge, waves, and intense rainfall are becoming an increasingly more important concern for coastal communities.\nThe map above was created for a project in the Cartographic Techniques (GEOG 3510) course at the University of Connecticut in which I assumed the role of an environmental consultant tasked with estimating the number of residents in the coastal Connecticut town of Groton that could be affected by the storm surge of a category 4 hurricane. I then proposed locations for shelter and aid stations where supplies could be stockpiled and medical personnel and rescue crews could be stationed. Finally, I communicated my results via the short PowerPoint presentation below."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Michael Riveglia",
+    "section": "",
+    "text": "Hello, thank you for visiting my website!\nI am primarily interested in geospatial technologies and spatial analysis as a means to extract useful information from spatial data of all types. My appreciation of geography began with an interest in exploring social and economic differences across the US through a qualitative lens. After being introduced to GIS, I increasingly gained an appreciation of maps as unique and powerful data visualization tools.\nCurrently, I am looking to further develop my Python and R programming skills while exploring the field of spatial data science. I encourage you to view my portfolio of selected projects."
+  },
+  {
+    "objectID": "cyberinfrastructure-competition.html",
+    "href": "cyberinfrastructure-competition.html",
+    "title": "Cyberinfrastructure Competition",
+    "section": "",
+    "text": "Created using Flowmap City, owned by Geovisually GmbH\n\n\nTools Used\n\nFlowmap City R R-Studio\n\n\nDescription\nDocked bike sharing systems are present in many large cities across the United States and allow the public to rent bicycles from docking stations located around the city and return them to any available docking station after use.\nAs part of a competition hosted by the Geography and Computing Departments at the University of Connecticut I was part of an interdisciplinary team of undergraduate and graduate Computer Science and Geography students tasked with creating a machine learning model to predict future in-flow and out-flow trips from stations in Manhattan while supplementing these results with spatiotemporal analyses in order to better understand trends in bike share usage across Manhattan.\nThe flow map above was created with bike share trip data from October 2019 that was transformed to work with the Flowmap City website using R and the tidyverse collection of packages:\n\nsetwd(\"~/UConn - BS GIS/Cyberinfrastructure Competition\")\nlibrary(tidyverse)\n\n#Start Trips\nflows_StartTime &lt;- read_csv(\"Trip Tables/TripData4.csv\",\n                            col_types = cols(\n                              starttime = col_datetime(\"%Y-%m-%d %H:%M:%S\")\n                              ))\nnames(flows_StartTime) = c('...1', 'tripduration', 'starttime',\n                           'stoptime', 'start_station_id', 'start_station_name',\n                           'start_station_latitude', 'start_station_longitude',\n                           'end_station_id', 'end_station_name', 'end_station_latitude',\n                           'end_station_longitude', 'bikeid', 'usertype',\n                           'birthyear', 'gender')\n\nflows_StartTime_Count &lt;- flows_StartTime %&gt;%\n  group_by(start_station_id, end_station_id, starttime) %&gt;%\n  summarise(count = n())\n\nwrite_csv(flows_StartTime_Count, file = \"TripData4-Flows-Start-Time-Count.csv\")\n\n\n#End Trips\nflows_EndTime &lt;- read_csv(\"Trip Tables/TripData4.csv\",\n                          col_types = cols(\n                            stoptime = col_datetime(\"%Y-%m-%d %H:%M:%S\")\n                            ))\n\nnames(flows_EndTime) = c('...1', 'tripduration', 'starttime',\n                           'stoptime', 'start_station_id', 'start_station_name',\n                           'start_station_latitude', 'start_station_longitude',\n                           'end_station_id', 'end_station_name', 'end_station_latitude',\n                           'end_station_longitude', 'bikeid', 'usertype',\n                           'birthyear', 'gender')\n\nflows_EndTime_Count &lt;- flows_EndTime %&gt;%\n  group_by(start_station_id, end_station_id, stoptime) %&gt;%\n  summarise(count = n())\n\nwrite_csv(flows_EndTime_Count, file = \"TripData4-Flows-End-Time-Count.csv\")\n\nThis map was used by the team as a way to explore initial trends in raw trip volume between stations in space and time. The points represent bike share docks while the directional arrows between stations represent the travel from one station to a another.\nBy default bike stations near in space will be clustered to promote ease of viewing by stopping the display of too many trips on screen at once. As part of this competition, I was able to strengthen my skills working in an interdisciplinary team while exploring concepts in machine learning and GeoAI."
+  },
+  {
+    "objectID": "enslavement-in-connecticut.html",
+    "href": "enslavement-in-connecticut.html",
+    "title": "Enslavement in Connecticut",
+    "section": "",
+    "text": "Tools Used\n\nArcGIS Pro\n\n\nDescription\nThe map above was created for a project in the Cartographic Techniques course (GEOG 3510) at the University of Connecticut. The goal of the project was to address challenges in statistical mapping by learning and applying different techniques, classification schemes, and symbolization methods to a dataset containing the population of enslaved individuals during 1799 in Connecticut by town.\nA second map (not shown) was also created for this project, using the same data, which purposefully used misleading map design in order to overstate the enslaved population. Many of the subtle strategies of deception used in the misleading second map were expressed in the book How to Lie With Maps by Mark Monmonier.\nOverall, this project allowed me to improve on my ability to critically examine maps created by other people and improve the design and communication of my own maps."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Michael Riveglia",
+    "section": "",
+    "text": "Portfolio\nBelow is an ever-growing collection of notable projects I have either been a part of or have undertaken myself as part of my academic, personal, or employment pursuits. My purpose for creating this portfolio is to showcase my work while recording my progress as I look to further develop my cartography and spatial data science skills.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCyberinfrastructure Competition\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnslavement in Connecticut\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStorm Surge Inundation in Groton, CT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  }
+]

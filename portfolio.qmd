@@ -1,0 +1,19 @@
+---
+listing:
+  type: grid #layout of portfolio items
+  grid-columns: 3 #number of columns in the grid to display
+  grid-item-border: true
+  grid-item-align: left #alignment of the content within each grid card 
+  image-height: 2emr # thumbnail image size
+  contents:
+    - cyberinfrastructure-competition.qmd
+    - enslavement-in-connecticut.qmd
+    - storm-surge-inundation-in-groton-ct.qmd
+    # add page for MOBILE GIS final project app
+    # add page for a project done in spatial big data analytics
+  sort: false
+---
+
+### *Portfolio*
+
+Below is an ever-growing collection of notable projects I have either been a part of or have undertaken myself as part of my academic, personal, or employment pursuits. My purpose for creating this portfolio is to showcase my work while recording my progress as I look to further develop my cartography and spatial data science skills.

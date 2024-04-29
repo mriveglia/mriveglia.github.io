@@ -1,0 +1,20 @@
+---
+title: "Storm Surge Inundation in Groton, CT"
+image: Storm-Surge-Groton-Thumbnail.jpg # portfolio page thumbnail image
+---
+
+![](Storm-Surge-Groton-Map.png){fig-align="center" width="676"}
+
+### *Tools Used*
+
+{{< #create badges for tools used>}}
+
+[ArcGIS Pro]{.badge .rounded-pill .bg-success}
+
+### *Description*
+
+With the projected rise of sea levels due to climate-related factors, coastal flooding from storm surge, waves, and intense rainfall are becoming an increasingly more important concern for coastal communities.
+
+The map above was created for a project in the Cartographic Techniques (GEOG 3510) course at the University of Connecticut in which I assumed the role of an environmental consultant tasked with estimating the number of residents in the coastal Connecticut town of Groton that could be affected by the storm surge of a category 4 hurricane. I then proposed locations for shelter and aid stations where supplies could be stockpiled and medical personnel and rescue crews could be stationed. Finally, I communicated my results via the short PowerPoint presentation below.
+
+![](Riveglia-Michael-Project-3.html){fig-align="center" width="775" height="580"}
