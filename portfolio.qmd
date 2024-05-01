@@ -1,15 +1,15 @@
 ---
 listing:
-  type: grid #layout of portfolio items
+  type: grid #layout style of portfolio items
   grid-columns: 3 #number of columns in the grid to display
   grid-item-border: true
   grid-item-align: left #alignment of the content within each grid card 
   image-height: 2emr # thumbnail image size
-  contents:
+  contents: 
     - cyberinfrastructure-competition.qmd
     - enslavement-in-connecticut.qmd
     - storm-surge-inundation-in-groton-ct.qmd
-    # add page for MOBILE GIS final project app
+    - ct-library-museum-locator-app.qmd
     # add page for a project done in spatial big data analytics
   sort: false
 ---
