@@ -7,8 +7,6 @@ image: Storm-Surge-Groton-Thumbnail.jpg # portfolio page thumbnail image
 
 ### *Tools Used*
 
-{{< #create badges for tools used>}}
-
 [ArcGIS Pro]{.badge .rounded-pill .bg-success}
 
 ### *Description*

@@ -1,9 +1,7 @@
 ---
 title: "Connecticut Library, Museum, and Gallery Locator"
-#image: 
+image: CT-Library-Museum-Gallery-Locator-App-Thumbnail.png
 ---
-
-{{< #embed project app>}}
 
 ```{=html}
 <iframe width="1100" height="600" src="https://experience.arcgis.com/experience/70f3332436f3483bb81a58bc0baadd81/" title="CT Library, Museum, Gallery Locator App"></iframe>
@@ -11,8 +9,6 @@ title: "Connecticut Library, Museum, and Gallery Locator"
 ###### *The app can also be viewed [here](https://experience.arcgis.com/experience/70f3332436f3483bb81a58bc0baadd81/).*
 
 ### *Tools Used*
-
-{{< #create badges for tools used>}}
 
 [ArcGIS Experience Builder]{.badge .rounded-pill .bg-success} [QGIS]{.badge .rounded-pill .bg-success}
 
