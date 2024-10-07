@@ -10,11 +10,11 @@ image: CT-Library-Museum-Gallery-Locator-App-Thumbnail.png
 
 ### *Tools Used*
 
-[ArcGIS Experience Builder]{.badge .rounded-pill .bg-success} [QGIS]{.badge .rounded-pill .bg-success}
+[Experience Builder (ArcGIS Online)]{.badge .rounded-pill .bg-success} [QGIS]{.badge .rounded-pill .bg-success}
 
 ### *Description*
 
-This app was created for a project in the Mobile GIS (GEOG 4518) course at the University of Connecticut.
+This application was created for a project in the Mobile GIS (GEOG 4518) course at the University of Connecticut.
 
 Nearly every town in Connecticut has a public library, each with unique collections emphasizing local history and culture. In addition to being great places to read, work, and study, public libraries provide spaces for local residents to connect with each other through the hosting of in-person and virtual programs, providing internet access and digital services training for workplace skills development and promoting environments which foster learning in children and adults through exposure and access to free reading material and educational services.
 

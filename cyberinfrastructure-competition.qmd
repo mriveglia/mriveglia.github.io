@@ -6,7 +6,7 @@ image: Cyberinfrastructure-Competition-Thumbnail.png # portfolio page thumbnail 
 ```{=html}
 <iframe width="1000" height="550" src="https://app.flowmap.city/public/01a0dbe4-8cc1-4135-9ba1-a49ce81b4870" title="Flowmap"></iframe>
 ```
-###### *Created using [Flowmap City](https://www.flowmap.city/), owned by Geovisually GmbH*
+###### ^Created\ using\ [Flowmap\ City](https://www.flowmap.city/),\ owned\ by\ Geovisually\ GmbH^
 
 ### *Tools Used*
 
@@ -14,17 +14,19 @@ image: Cyberinfrastructure-Competition-Thumbnail.png # portfolio page thumbnail 
 
 ### *Description*
 
+As part of a group competition hosted by the Geography and Computing Departments at the University of Connecticut I was part of an interdisciplinary team of undergraduate and graduate Computer Science and Geography students tasked with creating a machine learning model to predict future in-flow and out-flow trips from bike share stations in Manhattan while supplementing these results with spatiotemporal analyses to better understand trends in bike share usage across Manhattan.
+
 Docked bike sharing systems are present in many large cities across the United States and allow the public to rent bicycles from docking stations located around the city and return them to any available docking station after use.
 
-As part of a competition hosted by the Geography and Computing Departments at the University of Connecticut I was part of an interdisciplinary team of undergraduate and graduate Computer Science and Geography students tasked with creating a machine learning model to predict future in-flow and out-flow trips from stations in Manhattan while supplementing these results with spatiotemporal analyses in order to better understand trends in bike share usage across Manhattan.
+The flow map above was created using bike share trip data from October 2019. This raw dataset was supplied to each team by the judges.
 
-The flow map above was created with bike share trip data from October 2019 that was transformed to work with the Flowmap City website using R and the tidyverse collection of packages:
+The R script below was used to transform the provided data set to allow it to work with the Flowmap City website. This is mainly achieved through the tidyverse collection of packages:
 
 ```{r, eval=FALSE}
 setwd("~/UConn - BS GIS/Cyberinfrastructure Competition")
 library(tidyverse)
 
-#Start Trips
+# Start Trips
 flows_StartTime <- read_csv("Trip Tables/TripData4.csv",
                             col_types = cols(
                               starttime = col_datetime("%Y-%m-%d %H:%M:%S")
@@ -43,7 +45,7 @@ flows_StartTime_Count <- flows_StartTime %>%
 write_csv(flows_StartTime_Count, file = "TripData4-Flows-Start-Time-Count.csv")
 
 
-#End Trips
+# End Trips
 flows_EndTime <- read_csv("Trip Tables/TripData4.csv",
                           col_types = cols(
                             stoptime = col_datetime("%Y-%m-%d %H:%M:%S")
@@ -63,6 +65,8 @@ flows_EndTime_Count <- flows_EndTime %>%
 write_csv(flows_EndTime_Count, file = "TripData4-Flows-End-Time-Count.csv")
 ```
 
-This map was used by the team as a way to explore initial trends in raw trip volume between stations in space and time. The points represent bike share docks while the directional arrows between stations represent the travel from one station to a another.
+This result was used by the team as a way to explore initial trends in raw trip volume between stations in space and time. Each point represents a bike share dock while the directional arrows between stations represent the travel from one station to a another.
 
-By default bike stations near in space will be clustered to promote ease of viewing by stopping the display of too many trips on screen at once. As part of this competition, I was able to strengthen my skills working in an interdisciplinary team while exploring concepts in machine learning and GeoAI.
+Note that, by default, Flowmap City clusters bike stations that are near in space to promote ease of viewing. This setting can be changed if desired.
+
+As part of this competition, I was able to strengthen my skills working in an interdisciplinary team while exploring concepts in machine learning and GeoAI.
