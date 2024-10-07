@@ -6,7 +6,7 @@ image: Cyberinfrastructure-Competition-Thumbnail.png # portfolio page thumbnail 
 ```{=html}
 <iframe width="1000" height="550" src="https://app.flowmap.city/public/01a0dbe4-8cc1-4135-9ba1-a49ce81b4870" title="Flowmap"></iframe>
 ```
-###### ^Created\ using\ [Flowmap\ City](https://www.flowmap.city/),\ owned\ by\ Geovisually\ GmbH^
+###### ^Created using [Flowmap City](https://www.flowmap.city/), owned by Geovisually GmbH^
 
 ### *Tools Used*
 
