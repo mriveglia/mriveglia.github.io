@@ -176,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <iframe width="1000" height="550" src="https://app.flowmap.city/public/01a0dbe4-8cc1-4135-9ba1-a49ce81b4870" title="Flowmap"></iframe>
 <section id="created-using-flowmap-city-owned-by-geovisually-gmbh" class="level6">
-<h6 class="anchored" data-anchor-id="created-using-flowmap-city-owned-by-geovisually-gmbh"><em>Created using <a href="https://www.flowmap.city/">Flowmap City</a>, owned by Geovisually GmbH</em></h6>
+<h6 class="anchored" data-anchor-id="created-using-flowmap-city-owned-by-geovisually-gmbh"><sup>Created&nbsp;using&nbsp;<a href="https://www.flowmap.city/">Flowmap&nbsp;City</a>,&nbsp;owned&nbsp;by&nbsp;Geovisually&nbsp;GmbH</sup></h6>
 </section>
 <section id="tools-used" class="level3">
 <h3 class="anchored" data-anchor-id="tools-used"><em>Tools Used</em></h3>
@@ -184,14 +184,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="description" class="level3">
 <h3 class="anchored" data-anchor-id="description"><em>Description</em></h3>
+<p>As part of a group competition hosted by the Geography and Computing Departments at the University of Connecticut I was part of an interdisciplinary team of undergraduate and graduate Computer Science and Geography students tasked with creating a machine learning model to predict future in-flow and out-flow trips from bike share stations in Manhattan while supplementing these results with spatiotemporal analyses to better understand trends in bike share usage across Manhattan.</p>
 <p>Docked bike sharing systems are present in many large cities across the United States and allow the public to rent bicycles from docking stations located around the city and return them to any available docking station after use.</p>
-<p>As part of a competition hosted by the Geography and Computing Departments at the University of Connecticut I was part of an interdisciplinary team of undergraduate and graduate Computer Science and Geography students tasked with creating a machine learning model to predict future in-flow and out-flow trips from stations in Manhattan while supplementing these results with spatiotemporal analyses in order to better understand trends in bike share usage across Manhattan.</p>
-<p>The flow map above was created with bike share trip data from October 2019 that was transformed to work with the Flowmap City website using R and the tidyverse collection of packages:</p>
+<p>The flow map above was created using bike share trip data from October 2019. This raw dataset was supplied to each team by the judges.</p>
+<p>The R script below was used to transform the provided data set to allow it to work with the Flowmap City website. This is mainly achieved through the tidyverse collection of packages:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/UConn - BS GIS/Cyberinfrastructure Competition"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Start Trips</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Start Trips</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>flows_StartTime <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Trip Tables/TripData4.csv"</span>,</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                            <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                              <span class="at">starttime =</span> <span class="fu">col_datetime</span>(<span class="st">"%Y-%m-%d %H:%M:%S"</span>)</span>
@@ -210,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(flows_StartTime_Count, <span class="at">file =</span> <span class="st">"TripData4-Flows-Start-Time-Count.csv"</span>)</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#End Trips</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># End Trips</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>flows_EndTime <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Trip Tables/TripData4.csv"</span>,</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                          <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                            <span class="at">stoptime =</span> <span class="fu">col_datetime</span>(<span class="st">"%Y-%m-%d %H:%M:%S"</span>)</span>
@@ -229,8 +230,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(flows_EndTime_Count, <span class="at">file =</span> <span class="st">"TripData4-Flows-End-Time-Count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>This map was used by the team as a way to explore initial trends in raw trip volume between stations in space and time. The points represent bike share docks while the directional arrows between stations represent the travel from one station to a another.</p>
-<p>By default bike stations near in space will be clustered to promote ease of viewing by stopping the display of too many trips on screen at once. As part of this competition, I was able to strengthen my skills working in an interdisciplinary team while exploring concepts in machine learning and GeoAI.</p>
+<p>This result was used by the team as a way to explore initial trends in raw trip volume between stations in space and time. Each point represents a bike share dock while the directional arrows between stations represent the travel from one station to a another.</p>
+<p>Note that, by default, Flowmap City clusters bike stations that are near in space to promote ease of viewing. This setting can be changed if desired.</p>
+<p>As part of this competition, I was able to strengthen my skills working in an interdisciplinary team while exploring concepts in machine learning and GeoAI.</p>
 
 
 </section>
