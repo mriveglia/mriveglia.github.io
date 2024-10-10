@@ -16,4 +16,4 @@ listing:
 
 ### *Portfolio*
 
-Below is an ever-growing collection of notable projects I have either been a part of or have undertaken myself as part of my academic, personal, or employment pursuits. My purpose for creating this portfolio is to showcase my work while recording my progress as I look to further develop my cartography and spatial data science skills.
+Below is a collection of some projects I have either been a part of or have undertaken myself as part of my academic, personal, or employment pursuits. My purpose for creating this portfolio is to showcase my work while recording my progress as I look to further develop my skills.
