@@ -1,6 +1,6 @@
 ---
 #title: "Michael Riveglia"
-image: Profile-Picture.png
+image: Michael_Riveglia.png
 sidebar: false
 about:
   template: trestles
