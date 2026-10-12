@@ -10,6 +10,7 @@ listing:
     - enslavement-in-connecticut.qmd
     - storm-surge-inundation-in-groton-ct.qmd
     - ct-library-museum-locator-app.qmd
+    - public-libraries-storymap.qmd
     # add page for a project done in spatial big data analytics
   sort: false
 ---
