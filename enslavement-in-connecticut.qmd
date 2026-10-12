@@ -11,10 +11,6 @@ image: CT-Enslavement-Thumbnail.jpg # portfolio page thumbnail image
 
 ### *Description*
 
-The map above was created for a project in the Cartographic Techniques (GEOG 3510) course at the University of Connecticut. The goal of the project was to address challenges in statistical mapping by learning and applying different techniques, classification schemes, and symbolization methods to a dataset containing the population of enslaved individuals during 1799 in Connecticut by town.
-
-A second map (not shown) was also created for this project which purposefully used misleading map design in order to overstate the enslaved population. This was done as an exercise to apply some of the subtle strategies of deception expressed in the book *How to Lie With Maps* by Mark Monmonier.
-
-The data used in this project originates from from radicalcartography.net (website of William Rankin).
+The goal of this project was to address challenges in statistical mapping by learning and applying different techniques, classification schemes, and symbolization methods to a dataset containing the population of enslaved individuals during 1799 in Connecticut by town. A second map (not shown) was also created for this project which purposefully used misleading map design in order to overstate the enslaved population. The data used in this project originates from from radicalcartography.net.
 
 Overall, this project allowed me to improve on my ability to critically examine maps created by others and improve the design and communication of my own maps.
