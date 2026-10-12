@@ -4,7 +4,7 @@ image: public-libraries-from-past-to-present-thumbnail.png
 ---
 
 ```{=html}
-<iframe src="https://storymaps.arcgis.com/stories/3a73a6fa769f4f44b6dd17ff6b0516a4?header" width="100%" height="700px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+<iframe src="https://storymaps.arcgis.com/stories/3a73a6fa769f4f44b6dd17ff6b0516a4?header" width="100%" height="600px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
 ```
 ###### *The app can also be viewed [here](https://storymaps.arcgis.com/stories/3a73a6fa769f4f44b6dd17ff6b0516a4).*
 
